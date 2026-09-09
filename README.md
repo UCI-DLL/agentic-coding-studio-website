@@ -23,6 +23,14 @@ Then visit <http://localhost:8000>. All six pages are plain HTML and can be depl
 - `assets/styles.css` — Shared responsive visual system
 - `assets/site.js` — Mobile navigation and header behavior
 
+## Visual system
+
+- Primary headings and emphasized interface text use Montserrat Bold.
+- Secondary labels and navigation use Montserrat Regular.
+- Paragraphs and other body copy use Open Sans.
+- The core palette is UCI Blue (`#255799`), Darkest Blue (`#002244`), UCI Gold (`#fecc07`), Green (`#3f9c35`), and Lime Green (`#7ab800`).
+- Shared responsive page gutters and section spacing are defined as custom properties in `assets/styles.css` so every page maintains comfortable margins at desktop, tablet, and mobile widths.
+
 ## Information still needed
 
 - Approved project and UCI Digital Learning Lab logos or brand guidance
