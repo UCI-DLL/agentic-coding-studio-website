@@ -19,7 +19,7 @@ Then visit <http://localhost:8000>. All six pages are plain HTML and can be depl
 - `platform.html` — Learning environment and planned educational design
 - `research.html` — Research areas, foundations, methods, and planned implementation
 - `people.html` — Project leadership and advisory board
-- `contact.html` — Contact page with explicit placeholders for details still to be supplied
+- `contact.html` — Contact page with collaboration pathways and an explicit placeholder for verified contact details
 - `assets/styles.css` — Shared responsive visual system
 - `assets/site.js` — Mobile navigation and header behavior
 
