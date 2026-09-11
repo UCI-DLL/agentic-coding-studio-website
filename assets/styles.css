@@ -171,3 +171,18 @@ section{padding:clamp(4.5rem,8vw,7rem) 0}.section-tint{background:rgba(37,87,153
 .contact-direct { padding:2rem; border-top:4px solid var(--mint); border-radius:0 0 var(--radius) var(--radius); background:var(--soft); }
 .project-email { font:700 1.3rem Montserrat,Arial,sans-serif; }
 @media(max-width:950px){.project-trajectory{grid-template-columns:1fr}.project-trajectory>li{min-height:auto}.project-trajectory>li:not(:last-child)::after{content:'↓';top:auto;right:50%;bottom:-1.3rem}.contact-layout{grid-template-columns:1fr}}
+.project-overview a,.platform-context a { color:var(--blue-2); font-weight:700; }
+.project-process { display:grid; gap:.75rem; min-height:360px; align-content:center; padding:clamp(1.5rem,4vw,3rem); border-radius:var(--radius); background:var(--soft); }
+.project-process > div { display:grid; grid-template-columns:64px 1fr; gap:1rem; padding:1rem; border-left:4px solid var(--blue-2); background:white; }
+.project-process > div:nth-child(2) { border-color:var(--mint); }
+.project-process > div:nth-child(3) { border-color:var(--gold); }
+.project-process span { color:var(--blue-2); font:700 .75rem Montserrat,Arial,sans-serif; }
+.partner-grid-two { grid-template-columns:repeat(2,1fr); }
+.partner-link { color:inherit; text-decoration:none; transition:transform .2s ease,box-shadow .2s ease; }
+.partner-link:hover,.partner-link:focus-visible { transform:translateY(-3px); box-shadow:var(--shadow); }
+.platform-media-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.5rem; }
+.platform-media-grid figure { min-width:0; margin:0; }
+.platform-media-frame { overflow:hidden; aspect-ratio:16/9; border:1px solid var(--line); border-radius:var(--radius); background:white; box-shadow:var(--shadow); }
+.platform-media-frame img { display:block; width:100%; height:100%; object-fit:cover; object-position:top center; }
+.platform-media-grid figcaption { padding-top:.8rem; color:var(--muted); font-size:.88rem; }
+@media(max-width:620px){.partner-grid-two,.platform-media-grid{grid-template-columns:1fr}.project-process{min-height:auto}}
