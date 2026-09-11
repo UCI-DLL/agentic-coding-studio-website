@@ -149,6 +149,7 @@ section{padding:clamp(4.5rem,8vw,7rem) 0}.section-tint{background:rgba(37,87,153
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 /* Project context, trajectory, and contact additions */
+.institution-note { max-width:760px; margin-top:1.25rem; color:var(--muted); }
 .link-placeholder { color:var(--blue-2); font-weight:700; text-decoration:underline dashed; text-underline-offset:.22em; }
 .project-resource-link { display:inline-flex; align-items:center; min-height:48px; }
 .platform-context { padding-bottom:clamp(2rem,4vw,3.5rem); }
