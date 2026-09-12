@@ -27,9 +27,8 @@ img,svg { max-width:100%; }
 .site-header.scrolled { border-color:var(--line); }
 .nav-wrap { min-height:84px; display:flex; align-items:center; justify-content:space-between; gap:2rem; }
 .brand { display:flex; align-items:center; gap:.75rem; text-decoration:none; font-family:Montserrat,Arial,sans-serif; font-weight:700; line-height:1.05; letter-spacing:-.02em; }
-.brand-mark { display:grid; grid-template-columns:repeat(2,12px); gap:3px; transform:rotate(-4deg); }
-.brand-mark i { display:block; width:12px; height:12px; border-radius:3px; background:var(--blue); }
-.brand-mark i:nth-child(2){background:var(--gold)} .brand-mark i:nth-child(3){background:var(--green)} .brand-mark i:nth-child(4){background:var(--lime)}
+.brand-logo { display:block; width:64px; height:auto; flex:0 0 auto; object-fit:contain; }
+.site-footer .brand-logo { width:88px; }
 .nav-list { display:flex; align-items:center; gap:.15rem; list-style:none; padding:0; margin:0; }
 .nav-list a { display:block; padding:.65rem .82rem; border-radius:7px; text-decoration:none; font-family:Montserrat,Arial,sans-serif; font-size:.92rem; font-weight:400; }
 .nav-list a:hover,.nav-list a:focus-visible { background:white; }
