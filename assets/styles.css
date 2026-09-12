@@ -47,7 +47,8 @@ h3 { font-size:1.35rem; letter-spacing:-.025em; }
 .hero-home { min-height:calc(100vh - 84px); display:flex; align-items:center; position:relative; }
 .hero-home h1 span { color:var(--blue); }
 .hero-grid { display:grid; grid-template-columns:minmax(0,1.4fr) minmax(260px,.6fr); gap:3rem; align-items:center; width:100%; }
-.hero-empowerment { min-height:460px; position:relative; isolation:isolate; }
+.hero-home-image { width:100%; max-width:520px; justify-self:center; }
+.hero-home-image img { display:block; width:100%; height:auto; max-height:520px; object-fit:contain; }
 .hero-empowerment:before { content:''; position:absolute; inset:12% 2% 1% 8%; z-index:-3; border-radius:48% 52% 45% 55%; background:linear-gradient(145deg,#d8e7f5 0 52%,#dcedd9 52%); transform:rotate(-4deg); }
 .amplify-orbit { position:absolute; z-index:-2; border:2px solid var(--blue); border-radius:50%; opacity:.25; }
 .orbit-one { inset:6% 4% 5% 7%; transform:rotate(18deg); }
