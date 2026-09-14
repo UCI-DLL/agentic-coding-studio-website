@@ -200,5 +200,6 @@ section{padding:clamp(4.5rem,8vw,7rem) 0}.section-tint{background:rgba(37,87,153
 /* Keep leadership profiles compact while matching Advisory Board portrait sizing. */
 .people-grid .person { min-height:0; display:grid; grid-template-columns:200px minmax(0,1fr); gap:1.5rem; align-items:start; }
 .people-grid .person .advisor-photo-frame { margin:0; }
+.person-photo-safoura { object-fit:contain; object-position:center top; background:var(--soft); }
 .person-email { display:inline-block; margin-top:.65rem; color:var(--blue-2); font-weight:700; overflow-wrap:anywhere; }
 @media(max-width:720px){.people-grid .person{grid-template-columns:1fr}.people-grid .person .advisor-photo-frame{margin-bottom:.25rem}}
