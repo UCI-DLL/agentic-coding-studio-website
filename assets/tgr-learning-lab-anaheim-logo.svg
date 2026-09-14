@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" role="img" aria-labelledby="title desc">
+  <title id="title">TGR Learning Lab Anaheim</title>
+  <desc id="desc">TGR Learning Lab Anaheim wordmark</desc>
+  <rect width="400" height="220" rx="18" fill="#fff"/>
+  <g transform="translate(44 35)">
+    <path d="M0 0h72v72H0z" rx="5" fill="#ef7b23"/>
+    <path d="M13 13h46v10H42v36H30V23H13z" fill="#fff"/>
+    <path d="M82 3h218v11H82zm0 26h174v11H82zm0 26h196v11H82z" fill="#20252b"/>
+    <text x="0" y="112" fill="#20252b" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="1.2">TGR LEARNING LAB</text>
+    <text x="0" y="143" fill="#ef7b23" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="5">ANAHEIM</text>
+  </g>
+</svg>
