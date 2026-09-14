@@ -164,22 +164,18 @@ section{padding:clamp(4.5rem,8vw,7rem) 0}.section-tint{background:rgba(37,87,153
 .project-trajectory ul { padding-left:1.2rem; }
 .project-trajectory strong { display:block; margin-top:1.4rem; color:var(--blue-2); font-family:Montserrat,Arial,sans-serif; }
 .trajectory-year { display:block; margin-bottom:1rem; color:var(--blue-2); font:700 .75rem Montserrat,Arial,sans-serif; text-transform:uppercase; letter-spacing:.08em; }
-.contact-layout { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr); gap:clamp(2.5rem,7vw,7rem); align-items:start; }
+.contact-layout { max-width:760px; }
 .contact-form { display:grid; gap:.65rem; margin-top:2rem; }
 .contact-form label { margin-top:.45rem; font:700 .82rem Montserrat,Arial,sans-serif; }
 .contact-form input,.contact-form textarea { width:100%; padding:.85rem 1rem; border:1px solid var(--line); border-radius:9px; background:white; color:var(--ink); font:inherit; }
 .contact-form textarea { resize:vertical; }
 .contact-form .button { justify-self:start; margin-top:.75rem; }
-.form-status,.placeholder-note { color:var(--muted); font-size:.88rem; }
-.contact-direct { padding:2rem; border-top:4px solid var(--mint); border-radius:0 0 var(--radius) var(--radius); background:var(--soft); }
-.project-email { font:700 1.3rem Montserrat,Arial,sans-serif; }
-@media(max-width:950px){.project-trajectory{grid-template-columns:1fr}.project-trajectory>li{min-height:auto}.project-trajectory>li:not(:last-child)::after{content:'↓';top:auto;right:50%;bottom:-1.3rem}.contact-layout{grid-template-columns:1fr}}
+@media(max-width:950px){.project-trajectory{grid-template-columns:1fr}.project-trajectory>li{min-height:auto}.project-trajectory>li:not(:last-child)::after{content:'↓';top:auto;right:50%;bottom:-1.3rem}}
 .project-overview a,.platform-context a { color:var(--blue-2); font-weight:700; }
-.project-process { display:grid; gap:.75rem; min-height:360px; align-content:center; padding:clamp(1.5rem,4vw,3rem); border-radius:var(--radius); background:var(--soft); }
-.project-process > div { display:grid; grid-template-columns:64px 1fr; gap:1rem; padding:1rem; border-left:4px solid var(--blue-2); background:white; }
-.project-process > div:nth-child(2) { border-color:var(--mint); }
-.project-process > div:nth-child(3) { border-color:var(--gold); }
-.project-process span { color:var(--blue-2); font:700 .75rem Montserrat,Arial,sans-serif; }
+.project-overview-content { max-width:900px; margin-inline:auto; text-align:center; }
+.project-overview-content h2 { max-width:780px; margin-inline:auto; }
+.project-overview-content .lede { margin-inline:auto; }
+.project-overview-content .actions { justify-content:center; }
 .partner-grid-two { grid-template-columns:repeat(2,1fr); }
 .partner-link { color:inherit; text-decoration:none; transition:transform .2s ease,box-shadow .2s ease; }
 .partner-link:hover,.partner-link:focus-visible { transform:translateY(-3px); box-shadow:var(--shadow); }
@@ -187,7 +183,22 @@ section{padding:clamp(4.5rem,8vw,7rem) 0}.section-tint{background:rgba(37,87,153
 .platform-media-grid figure { min-width:0; margin:0; }
 .platform-media-frame { overflow:hidden; aspect-ratio:16/9; border:1px solid var(--line); border-radius:var(--radius); background:white; box-shadow:var(--shadow); }
 .platform-media-frame img { display:block; width:100%; height:100%; object-fit:cover; object-position:top center; }
-.platform-media-grid figcaption { padding-top:.8rem; color:var(--muted); font-size:.88rem; }
-@media(max-width:620px){.partner-grid-two,.platform-media-grid{grid-template-columns:1fr}.project-process{min-height:auto}}
+.platform-media-grid figcaption,.platform-media-single figcaption { padding-top:.8rem; color:var(--muted); font-size:.88rem; }
+.platform-media-single { margin:0; }
+.platform-media-frame-full { aspect-ratio:auto; }
+.platform-media-frame-full img { height:auto; object-fit:contain; }
+@media(max-width:620px){.partner-grid-two,.platform-media-grid{grid-template-columns:1fr}}
 
 .hero-home h1, .page-hero h1 { font-size:clamp(1.7rem,3.6vw,3.35rem); }
+
+/* Present the Informal STEM factors in two balanced, easy-to-scan rows. */
+.section-dark .setting-list { display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; max-width:620px; margin:2rem auto 0; }
+.section-dark .setting-list li { flex:0 1 calc((100% - 2rem)/3); min-width:150px; min-height:72px; display:grid; place-items:center; padding:.8rem 1rem; border:1px solid rgba(122,184,0,.45); border-radius:999px; background:#dff0bd; color:var(--ink); text-align:center; box-shadow:0 8px 20px rgba(0,0,0,.12); }
+@media(max-width:620px){.section-dark .setting-list{gap:.75rem}.section-dark .setting-list li{flex-basis:calc((100% - .75rem)/2);min-width:130px}}
+
+
+/* Keep leadership profiles compact while matching Advisory Board portrait sizing. */
+.people-grid .person { min-height:0; display:grid; grid-template-columns:200px minmax(0,1fr); gap:1.5rem; align-items:start; }
+.people-grid .person .advisor-photo-frame { margin:0; }
+.person-email { display:inline-block; margin-top:.65rem; color:var(--blue-2); font-weight:700; overflow-wrap:anywhere; }
+@media(max-width:720px){.people-grid .person{grid-template-columns:1fr}.people-grid .person .advisor-photo-frame{margin-bottom:.25rem}}
