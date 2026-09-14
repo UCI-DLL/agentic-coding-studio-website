@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" role="img" aria-labelledby="title desc">
+  <title id="title">ListoAmerica</title>
+  <desc id="desc">ListoAmerica wordmark</desc>
+  <rect width="400" height="220" rx="18" fill="#fff"/>
+  <g transform="translate(45 57)">
+    <path d="M10 2h52l-8 16H26v58h-16z" fill="#d93c42"/>
+    <path d="M68 2h16v74H68z" fill="#183c69"/>
+    <path d="m102 0 8 17 19 3-14 13 3 19-16-9-17 9 4-19-14-13 19-3z" fill="#e7b52f"/>
+    <text x="134" y="48" fill="#183c69" font-family="Arial, Helvetica, sans-serif" font-size="51" font-weight="700">LISTO</text>
+    <text x="10" y="102" fill="#d93c42" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" letter-spacing="6">AMERICA</text>
+  </g>
+</svg>
