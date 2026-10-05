@@ -218,3 +218,11 @@ section{padding:clamp(4.5rem,8vw,7rem) 0}.section-tint{background:rgba(37,87,153
 .person-link svg { width:21px; height:21px; fill:none; stroke:currentColor; stroke-width:1.9; stroke-linecap:round; stroke-linejoin:round; }
 .person-link:hover,.person-link:focus-visible { background:var(--blue-2); color:var(--white); transform:translateY(-2px); }
 .person-link-linkedin svg { fill:currentColor; stroke:none; }
+
+/* Contact form submission feedback and bot-trap field. */
+.form-honeypot { position:absolute; left:-10000px; width:1px; height:1px; overflow:hidden; }
+.form-status { margin:.5rem 0 0; padding:.85rem 1rem; border-radius:9px; font-weight:700; }
+.form-status[data-state="success"] { color:#174d11; background:#e5f4e2; border:1px solid #7ab800; }
+.form-status[data-state="error"] { color:#7b1f1f; background:#fff0f0; border:1px solid #c75b5b; }
+.contact-form .button:disabled { cursor:not-allowed; opacity:.58; }
+.turnstile-widget { min-height:65px; margin-top:.75rem; }
