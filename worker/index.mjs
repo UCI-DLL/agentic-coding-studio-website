@@ -110,7 +110,12 @@ async function handleContact(request, env) {
       text: `Name: ${validation.data.name}\nEmail: ${validation.data.email}\n\nMessage:\n${validation.data.message}`,
     });
   } catch (error) {
-    console.error('Contact email failed:', error);
+    console.error('Contact email failed', {
+  code: error?.code,
+  message: error?.message,
+  name: error?.name,
+  stack: error?.stack,
+});
     return json({ ok: false, message: 'We could not send your message. Please try again later.' }, 502);
   }
 
